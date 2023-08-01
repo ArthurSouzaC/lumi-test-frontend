@@ -27,7 +27,7 @@ export function DashboardInfoCard({
           {value && (
             <>
               {value}
-              <span className="text-base font-normal">{unit}</span>
+              <span className="text-base font-normal"> {unit}</span>
             </>
           )}
         </span>

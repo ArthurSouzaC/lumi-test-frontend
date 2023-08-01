@@ -109,6 +109,7 @@ export function History() {
                                     : "text-gray-600 cursor-not-allowed"
                                 } `}
                                 onClick={() =>
+                                  item.months.includes(month) &&
                                   downloadPDF(
                                     monthsNumbers.indexOf(month) + 1,
                                     item.clientId

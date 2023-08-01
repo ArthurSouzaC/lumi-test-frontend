@@ -24,7 +24,12 @@ export function DashboardInfoCard({
       {icon}
       <div className="flex gap-4">
         <span className="text-3xl text-center font-bold">
-          {value} <span className="text-base font-normal">{unit}</span>
+          {value && (
+            <>
+              {value}
+              <span className="text-base font-normal">{unit}</span>
+            </>
+          )}
         </span>
       </div>
       <span className="text-center">{description}</span>

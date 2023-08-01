@@ -9,7 +9,7 @@ interface DoughnutChartProps {
 export function DoughnutChart({ title, data }: DoughnutChartProps) {
   return (
     <div className="flex flex-col gap-4 items-center font-bold w-full">
-      <span className="text-center">{title}</span>
+      {data.labels?.[0] && <span className="text-center">{title}</span>}
       <div className="w-4/5 h-[20vh]">
         <Doughnut
           data={data}

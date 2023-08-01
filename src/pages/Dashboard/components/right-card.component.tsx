@@ -54,7 +54,7 @@ export function DashboardRightCard({ data, month, setMonth }: any) {
         </div>
 
         <span className="font-bold text-2xl md:text-3xl mt-24 mb-4 md:mt-0 md:my-4">
-          R$ {data.price}
+          {data.price && 'R$ ' + data.price}
         </span>
 
         <DoughnutChart
